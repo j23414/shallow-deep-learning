@@ -15,7 +15,36 @@ i = 4
 j = 5
 M = numpy.zeros((i,j))
 
-for row in [0 : i-1]:
-  print(row)
+for row in range(0, i):
+  for col in range(0, j):
+    M[row,col] = 5*row + col
+
+M
+```
+
+output:
+
+```
+array([[ 0.,  1.,  2.,  3.,  4.],
+       [ 5.,  6.,  7.,  8.,  9.],
+       [10., 11., 12., 13., 14.],
+       [15., 16., 17., 18., 19.]])
+```
+
+Alternative answer?
+
+```
+M=[]
+for i in range(0,7):
+    for j in range(0,1):
+        M.append([5*i+j])
+
+M
+```
+
+output:
+
+```
+[[0], [5], [10], [15], [20], [25], [30]]
 ```
 
