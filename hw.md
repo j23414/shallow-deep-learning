@@ -10,7 +10,7 @@ source activate ${PWD}/DLwkshp_env
 Using two nested for loops, create a list M of seven lists with no repeating values such that element M[i][j] = 5 * i + j
 
 ```
-import numpy 
+import numpy
 i = 4
 j = 5
 M = numpy.zeros((i,j))
@@ -48,3 +48,4 @@ output:
 [[0], [5], [10], [15], [20], [25], [30]]
 ```
 
+This is a test of windows atom, required a git key.
